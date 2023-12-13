@@ -1,1 +1,3 @@
-A repository of all the programs that are covered in the course 'Data Structures and applications' (IS233AI).
+Programs:
+
+1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/stackUsingArray.c): includes push, pop and display.
