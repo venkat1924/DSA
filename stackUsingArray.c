@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 //global variables
-int stack[20], size, item, top=-1; 
+int stack[20], size, item, top=-1; //should change to dynamically allocate size of array and not used 20 as fixed size.
 
 //function prototypes
 int push(int item);
