@@ -66,7 +66,7 @@ void dequeue()
     }
 } 
  
-void show()
+void display()
 {
     
     if (Front == - 1)
