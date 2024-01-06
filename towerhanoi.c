@@ -8,7 +8,7 @@ void TowerHanoi(int n, char s, char d, char t)
   {
     TowerHanoi(n-1,s,t,d);
     printf("move %d disc from %c to %c\n",n,s,d);
-    TowerHanoi(n-1,d,t,s);
+    TowerHanoi(n-1,t,d,s);
   }
 }
 int main()
