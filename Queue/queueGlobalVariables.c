@@ -1,14 +1,14 @@
-// ma'am said use pointers not global variables here but fuck it, seems alright for now
-
-
 #include <stdio.h>
-# define SIZE 100
+#define SIZE 100
+
 void enqueue();
 void dequeue();
 void display();
+
 int inp_arr[SIZE];
 int Rear = - 1;
 int Front = - 1;
+
 main()
 {
     int ch;
