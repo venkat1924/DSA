@@ -23,7 +23,7 @@ int main() {
                 enqueue(item);
                 break;
             case 2:
-                dequeue();
+                printf("Element deleted: %d\n", dequeue());
                 break;
             case 3:
                 display();
