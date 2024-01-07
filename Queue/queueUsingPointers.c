@@ -12,7 +12,7 @@ int main() {
     int ch;
 
     while (1) {
-        printf("Enter your choice of operations : \n 1)Enqueue \n 2)Dequeue \n 3)Display \n 4)Exit\n");
+        printf("Enter your choice of operations :\t1)Enqueue\t2)Dequeue\t3)Display\t4)Exit\n");
         scanf("%d", &ch);
         switch (ch) {
             case 1:
