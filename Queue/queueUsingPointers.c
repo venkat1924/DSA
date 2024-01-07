@@ -60,7 +60,7 @@ void display(int *inp_arr, int *Rear, int *Front) {
     if (*Front == -1)
         printf("Empty Queue \n");
     else {
-        printf("Queue: \n");
+        printf("Queue:\t");
         for (int i = *Front; i <= *Rear; i++)
             printf("%d ", inp_arr[i]);
         printf("\n");
