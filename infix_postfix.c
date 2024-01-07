@@ -54,7 +54,7 @@ int in_to_post(char infix[20], struct stack *st)
             switch(symbol){
                 case('('):push(st,symbol);break;
                 case(')'):
-                    while(st->s[st->top]!=')')
+                    while(st->s[st->top]!='(')
                     {
                         postfix[j++]=pop(st);
                     }
@@ -64,6 +64,7 @@ int in_to_post(char infix[20], struct stack *st)
                 case('-'):
                 case('*'):
                 case('/'):
+                case('^'):
                     while(precedence(st->s[st->top])>=precedence(symbol) && st->top!=-1)
                     {
                         postfix[j++]=pop(st);
