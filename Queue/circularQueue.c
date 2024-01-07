@@ -3,7 +3,7 @@
 
 #define size 100
 int q[size];
-int f, r = -1;
+int f=-1, r = -1;
 
 void enqueue(int item);
 int dequeue();
