@@ -1,6 +1,18 @@
 Programs:
 
-1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/stackUsingArray.c): includes push, pop and display.
-2) [Implementation of a stack using a struct](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/stackUsingStruct.c): uses a struct that contains an array and an integer. Pointers to struct are used as parameters for push, pop and display.
-3) [Converting infix expression to postfix expression](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/infixToPostfix.c): uses a stack to convert infix to postfix expression. Recognizes +,-,*,/,^ and also handles spaces and \t.
-4) [Implementation of queue using array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/queue.c): courtesy of [Joel](https://github.com/playinpixel).
+# Stack
+1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingArray.c)
+2) [Implementation of a stack using a struct](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingStruct.c)
+3) [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
+4) [Converting infix expression to postfix expression](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/infixToPostfix.c)
+5) [Postfix expression evaluation](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/postfixEvaluation.c) (courtesy of [Joel](https://github.com/playinpixel))
+
+# Queue
+1) [Implementation of queue using array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queue.c) (courtesy of [Joel](https://github.com/playinpixel))
+2) [Implementation of a circular queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/circularQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
+
+# Recursion
+[Towers of Hanoi](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Recursion/towersOfHanoi.c) (courtesy of [Joel](https://github.com/playinpixel))
+
+# Linked List
+1) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
