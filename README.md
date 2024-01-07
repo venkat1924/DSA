@@ -14,4 +14,5 @@
 [Towers of Hanoi](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Recursion/towersOfHanoi.c) (courtesy of [Joel](https://github.com/playinpixel))
 
 # Linked List
-1) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
+1) [Ordered singly linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/singlyLinkedList.c)
+2) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
