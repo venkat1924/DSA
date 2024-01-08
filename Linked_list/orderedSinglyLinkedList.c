@@ -39,8 +39,10 @@ void insert(int value) {
         while (current->next != NULL && current->next->data < value) {
             current = current->next;
         }
-        newNode->next = current->next;
-        current->next = newNode;
+        newNode->next = current->next;  //2->4->6->8     5   current=4   current->next->data=6
+        current->next = newNode;   //if you're trying to insert A after B
+                                    // A->next = B->next
+                                    // B->next=A
     }
 }
 
