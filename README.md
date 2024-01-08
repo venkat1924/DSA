@@ -1,4 +1,4 @@
-# Stack
+# [Stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackNotes.md)
 1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingArray.c)
 2) [Implementation of a stack using a struct](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingStruct.c)
 3) [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
