@@ -90,7 +90,7 @@ void freePriorityQueue(PriorityQueue* pq) {
 }
 
 int main() {
-    // Example usage of the priority queue
+    // switch case to access and edit priority queue
     PriorityQueue* pq = createPriorityQueue();
  int d,p,ch;
  while(1){
