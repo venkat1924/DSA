@@ -17,4 +17,5 @@
 
 # Linked List
 1) [Ordered singly linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/orderedSinglyLinkedList.c)
-2) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
+2) [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
+3) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
