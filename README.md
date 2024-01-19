@@ -4,6 +4,7 @@
 3) [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
 4) [Converting infix expression to postfix expression](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/infixToPostfix.c)
 5) [Postfix expression evaluation](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/postfixEvaluation.c) (courtesy of [Joel](https://github.com/playinpixel))
+6) [Checking if parentheses in expression are balanced with a stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/parenthesesChecking.c)
 
 # [Queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/Queue_notes.md)
 1) [Implementation of a queue using an array and global variables](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueGlobalVariables.c) (courtesy of [Joel](https://github.com/playinpixel))
