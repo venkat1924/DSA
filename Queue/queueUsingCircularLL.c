@@ -86,21 +86,21 @@ int main() {
     enqueue(q, 20);
     enqueue(q, 30);
     enqueue(q,40);
-    //display(q);
+    display(q);
 
     printf("Dequeued item: %d\n", dequeue(q));
-    //printf("Dequeued item: %d\n", dequeue(q));
-    //display(q);
+    printf("Dequeued item: %d\n", dequeue(q));
+    display(q);
 
     enqueue(q, 40);
     enqueue(q, 50);
     display(q);
 
-    //printf("Dequeued item: %d\n", dequeue(q));
+    printf("Dequeued item: %d\n", dequeue(q));
     display(q);
-    //equeue(q);
-    //dequeue(q);
-    //dequeue(q);
+    dequeue(q);
+    dequeue(q);
+    dequeue(q);
 
     return 0;
 }
