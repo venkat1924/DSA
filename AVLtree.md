@@ -68,7 +68,7 @@ Q--R
 ```
 > nullX are all regular NULL, mermaid doesn't support duplication.
 
-## Rotation
+## [Rotation](https://en.wikipedia.org/wiki/Tree_rotation)
 
 Rotation is an operation performed to convert an unbalanced BST to a balanced BST (AVL).
 Two types are:
