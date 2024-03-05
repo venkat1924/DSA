@@ -68,4 +68,15 @@ Q--R
 ```
 > nullX are all regular NULL, mermaid doesn't support duplication.
 
+## Rotation
+
+Rotation is an operation performed to convert an unbalanced BST to a balanced BST (AVL).
+Two types are:
+- Single rotation
+  - Left rotation (L)
+  - Right rotation (R)
+- Double rotation
+  - Left right rotation (LR)
+  - Right left rotation (RL)
+
 
