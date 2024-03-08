@@ -1,0 +1,2 @@
+- A multi-way search tree: Binary search property holds (right subtree>root and left subtree<root)
+- 
