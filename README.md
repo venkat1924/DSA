@@ -21,5 +21,7 @@
 3) [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/polyMulUsingLinkedList.c) (courtesy of [Joel](https://github.com/playinpixel))
 
 # Trees
-1) [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Btree.md)
-2) [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Tries.md)
+1) [Binary Search Trees with all operations](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/binarySearchTrees.c)
+2) [AVL Trees (incomplete)](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/AVLtree.md)
+3) [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Btree.md)
+4) [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Tries.md)
