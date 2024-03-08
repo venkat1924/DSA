@@ -1,49 +1,86 @@
-# Tries
-- is a data structure representing a set of words (strings).
-- is a tree used to store a set of words.
-- apart from the root node, all other nodes store a character (letter)
+# Tries: A Tree for Storing Words
 
-  Tries can be classified as standard trie or compressed trie.
-## Standard trie
-- We get a word if we perform a traveral from the root to any of the leaf nodes.
-- In the set S containing all the words in the trie, no word should be the prefix of the above.
+Tries are a special kind of tree data structure used to store and manage sets of words. Imagine a branching tree where each branch represents a letter in a word.
+
+**Basic Idea:**
+
+* Each word is represented by a path from the root of the tree to a leaf (end node).
+* As you travel down the path, each branch represents a character in the word.
+* Unlike a regular tree, all nodes (except the root) store a single character, building the word step-by-step.
+
+**Classifications:**
+
+* **Standard Trie:**
   <p align="center">
     <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/0e313445-b359-4e3d-bb3d-92a507fba418" width=400>
   </p>
-### Conversion of a standard trie to a compressed trie
-- We can get a compressed trie from a standard trie by chaining the redundant nodes.
-<p align="center">
+    * This is the basic trie structure described above.
+    * Every path from root to leaf represents a complete word.
+    * No word in the set can be a prefix (beginning part) of another word.
+* **Compressed Trie:**
+    * A more space-efficient version of the standard trie.
+    * It identifies and merges redundant branches that contain the same characters.
+    * This reduces wasted space but requires internal nodes to have at least two branches ($degree >= 2$).
+    <p align="center">
   <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ec1ceb25-ea6a-457f-860e-4efad3bf4620" width=400>
 </p>
-  - All internal nodes have a degree $>=2$ in a compressed trie.
-## Compact trie
-- A representation of a compressed trie with some numeric values.
-- We use an array indexed from 0 to n-1 to store the n words.
-<p align="center">
-<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/09428286-d4ce-4998-b77c-dae7a60661fc" width =400>
-</p>
 
-- Each node in the compact trie contains three integers (i,j,k) to represent the substring in the node:
-  - i: represents the index of the word in the array which contains the substring. If the substring is in multiple strings, i refers to the first string which contains the substring.
-  - j: represents the starting index of the substring in the word
-  - k: represents the ending index of the substring in the word
-### Conversion of a compressed trie to a compact trie
-<p align="center">
-<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/515dfe89-8582-4152-ae8f-513285fee97e" width = 600>
-</p>
+* **Compact Trie (Similar to Compressed Trie):**
+    * This is a compressed trie with an additional numeric representation for efficiency.
+    * It uses an array to store the actual words themselves.
+    * Each node in the trie holds three values $(i, j, k)$ :
+        * $i$: Index in the word array pointing to the first word containing the substring represented by the node.
+        * $j$: Starting position of the substring within the word at index $i$.
+        * $k$: Ending position of the substring within the word at index $i$.
 
-# Suffix trie
-- is a compressed trie for all the suffixes of a word (string).
-Example:
-First, we create a set of all suffices given a word. We then build a standard trie for those suffices.
-<p align="center">
-<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/27b1788a-4fe0-4c7e-a8e6-4e475b8f6c5e" width = 400>
-</p>
-Then, we convert the standard trie to a compressed trie.
-<p align="center">
-<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/24a2ea4b-8535-4290-bd80-fe580106ffe7" width = 400>
-</p>
-Now, to convert the compressed trie to a compact trie, we do not need an integer to denote which word contains the substring, because there is only one word. So each node only contains two integers to denote the starting and ending indices of the word.
+        <p align="center">
+          <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/515dfe89-8582-4152-ae8f-513285fee97e" width = 600>
+        </p>
+
+**Benefits of Tries:**
+
+By using tries, we can perform various operations on sets of words very efficiently, such as searching for specific words, finding words with a common prefix (e.g., autocomplete suggestions), and implementing spell checkers.
+
+## Suffix Tries: Efficient Search Within Words
+
+A suffix trie is a specialized trie data structure designed to efficiently search within a single word (or string). It works by storing all possible suffixes (endings) of the word in a compressed trie.
+
+Here's a breakdown of the concept:
+
+1. **Suffix Breakdown:** 
+   - We start by taking the given word and creating a list containing all its suffixes. 
+   - Remember, a suffix is any ending portion of the word. 
+
+2. **Standard Trie Construction:**
+   - Next, we build a regular trie using this list of suffixes. 
+   - In a standard trie, each complete path from root to leaf represents a complete suffix.
+  
+    <p align="center">
+      <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/27b1788a-4fe0-4c7e-a8e6-4e475b8f6c5e" width = 400>
+    </p>
+
+3. **Compression for Efficiency:**
+   - To save space, we then transform the standard trie into a compressed trie. 
+   - This process identifies and merges branches that share the same characters, reducing redundancy.
+     
+   <p align="center">
+     <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/24a2ea4b-8535-4290-bd80-fe580106ffe7" width = 400>
+  </p>
+
+
+Since there's just a single word, we don't need an index to separate words. Therefore, each node in a suffix trie simply stores two integers:
+
+  - Starting index: This represents the starting position of the suffix within the original word.
+  - Ending index: This represents the ending position of the suffix within the original word.
+    
 <p align="center">
   <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/bca81fa4-1ade-420e-b4d7-60cfbab118ad" width = 400>
 </p>
+
+With this structure, suffix tries enable efficient operations like finding all occurrences of a substring within the word or identifying repeated patterns.
+
+  
+
+
+
+
