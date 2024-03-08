@@ -16,7 +16,7 @@
 where $m$ is the size of the hash table.
 
 For example:
-Let the size of the hash table = `7` and the `keys={52, 44, 35, 24, 10}`
+Let the size of the hash `m = 7` and the `keys = {52, 44, 35, 24, 10}`
 
 <div align="center">
   
