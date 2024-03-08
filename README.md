@@ -22,3 +22,4 @@
 
 # Trees
 1) [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Btree.md)
+2) [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Tries.md)
