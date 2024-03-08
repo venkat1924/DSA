@@ -32,39 +32,67 @@ Here's what happens when inserting a new element:
 
 This process ensures that the B-tree remains balanced, with all leaf nodes at the same level, even after insertions. 
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ac3419bf-e0c1-470b-92a3-584a82abfd93)
+<p align="center">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ac3419bf-e0c1-470b-92a3-584a82abfd93" width="300">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/fdd10f0b-e629-452f-9bcc-b5aad817ec13" width="300">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/02a647ec-5377-4b1d-b521-76053022d6cb" width="300">
+</p>
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/fdd10f0b-e629-452f-9bcc-b5aad817ec13)
-
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/02a647ec-5377-4b1d-b521-76053022d6cb)
 
 
 ## B+ tree
 
-A B+ tree of order m can have at most m children and at most m-1 keys just like B trees.
-BUT when a node has m keys, one key is promoted to the parent node AND it's also copied in the left child node (only if the left child node is a leaf node, otherwise, we don't copy the promoted values, just as in B tree). This way, all keys are present in the leaf nodes.
+Here's the rewritten explanation for B+ trees with improved readability:
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ce9a6e92-7996-4d3f-b66b-2fff3568e874)
+**B+ Trees: Enhanced Search and Sequential Access**
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ed5d4b65-e807-4b46-9b14-c6e4ed376253)
+B+ trees are an improvement over B-trees, designed for efficient searching and retrieval of large datasets stored on disk. Similar to B-trees, a B+ tree of order `m` can have a maximum of `m` children and `m-1` keys within a node.
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/7f47078d-9c7f-4103-bb3b-42cdfe9d1f5d)
+However, B+ trees handle insertions differently to optimize search performance:
 
-So after the B+ tree has been constructed, the last layer will consist of all the keys in the tree. Also, each leaf node will contain a reference to the next leaf node in the layer, to provide for sequential access.
+* **Key Placement:** When a node becomes full (holding `m` keys), a split operation occurs. Unlike B-trees, **one key is promoted to the parent node**, but it also gets **copied to the left child node**, if it's a leaf node. This ensures **all keys are present in the leaf nodes**.
 
-![image](https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/b8173187-7159-4c38-98d8-0e82108712a9)
+<p align="center">
 
-# Objective of using a B/B+ tree
+<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ce9a6e92-7996-4d3f-b66b-2fff3568e874" width=300>
 
-Secondary storage contains huge amounts of data. An index table needs to be built to contain references to the actual data. B/B+ trees are used to build this index table.
+<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/ed5d4b65-e807-4b46-9b14-c6e4ed376253" width=300>
 
-To summarise the differences between B and B+ trees:
+<img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/7f47078d-9c7f-4103-bb3b-42cdfe9d1f5d" width=300>
+</p>
 
-|B-tree|B+ tree|
-| :---: | :---:|
-| All keys will not be in the leaf nodes. | All keys will be in the leaf nodes. |
-| Provides only random access. | Provides both random and sequential access between leaf nodes. |
-| No additional memory is required. | Additional memory is required to store the promoted key in the leaf node. |
+* **Efficient Search:** By keeping all keys in the leaf nodes, B+ trees enable efficient searches. During a search, we traverse the tree using the keys in the internal nodes as a guide, eventually reaching the appropriate leaf node that contains the desired key or indicates its absence.
+* **Sequential Access:**  B+ trees offer an additional advantage: **sequential access**. Each leaf node typically contains a **reference (pointer)** to the next leaf node in the same level. This allows us to efficiently iterate through all data entries in sorted order, a feature not readily available in traditional B-trees.
+<p align="center">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures/assets/128356330/b8173187-7159-4c38-98d8-0e82108712a9" width=300>
+</p>
+
+In summary, B+ trees provide efficient searching and retrieval of large datasets by keeping all keys in the leaves and enabling efficient navigation through the sorted data using pointers between leaf nodes. 
+
+
+
+
+
+Here's a rewrite of the explanation about B-Tree and B+ Tree objectives to improve understanding:
+
+# Why Use B-Trees and B+ Trees?
+
+When dealing with massive datasets stored on secondary storage (like hard drives), traditional search methods become slow. To improve retrieval speed, we create **indexes**, which act as special data structures that point to the actual data location. B-trees and B+ trees are two popular choices for building efficient indexes.
+
+**Core Function:**
+
+Both B-trees and B+ trees excel at **organizing and searching large datasets**. They achieve this by structuring data in a hierarchical way, similar to a family tree. Each level in the tree helps narrow down the search until we reach the specific data point.
+
+
+# B-Tree vs. B+ Tree: Key Differences
+
+| Feature           | B-Tree                                 | B+ Tree                                   |
+|-------------------|-----------------------------------------|----------------------------------------------|
+| Keys in Leaf Nodes | Not all keys are guaranteed to be in leaf nodes | All keys are guaranteed to be in leaf nodes  |
+| Access Type       | Primarily random access                  | Random and sequential access                 |
+| Memory Usage      | Lower memory usage                       | Might require additional memory to store promoted key in leaf nodes |
+| Search Efficiency  | Potentially slower searches due to non-leaf key lookups | Faster searches due to all keys being in leaf nodes |
+
 
 
 
