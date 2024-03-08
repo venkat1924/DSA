@@ -16,7 +16,7 @@
 where $m$ is the size of the hash table.
 
 For example:
-Let the size of the hash `m = 7` and the `keys = {52, 44, 35, 24, 10}`
+Let the size of the hash table be `m = 7` and the `keys = {52, 44, 35, 24, 10}`
 
 <div align="center">
   
@@ -63,8 +63,11 @@ Two methods of avoiding collision:
 ### Open Addressing
 #### Linear Probing
 Let `m=10`, then:
+
 <div align="center">
-$h(x)=x \pmod 10$
+  
+$h(x)=x \pmod {10} $
+
 </div>  
 
 Let `keys={12, 44, 67, 22, 58, 64, 52, 89}`
@@ -72,8 +75,10 @@ Let `keys={12, 44, 67, 22, 58, 64, 52, 89}`
 We can instead define $h(x)$ to be:
 
 <div align="center">
-$h(x)=(h(x)+i) \mod 10$ 
+  
+$h(x)=(h(x)+i) \mod {10}$ <br>
   where i=0, 1 ... 9
+  
 </div> 
 
 `h(12)=2+0(mod 10)=2`
@@ -112,8 +117,11 @@ The **problem** with linear probing is that it forms **clusters**.
 #### Quadratic Probing
 
 Let `m=10`, then:
+
 <div align="center">
-$h(x)=x \pmod 10$
+  
+$h(x)=x \pmod {10}$
+
 </div>  
 
 Let `keys={52, 24, 72, 80, 44, 65}`.
@@ -121,6 +129,7 @@ Let `keys={52, 24, 72, 80, 44, 65}`.
 We can instead define $h(x)$ to be:
 
 <div align="center">
-$h(x)=(h(x)+i^2) \mod 10$ 
+  
+$h(x)=(h(x)+i^2) \mod {10}$ <br>
   where i=0, 1 ... 9
 </div> 
