@@ -25,3 +25,5 @@
 2) [AVL Trees (incomplete)](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/AVLtree.md)
 3) [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Btree.md)
 4) [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Tries.md)
+
+# [Hashing](https://github.com/venkat1924/IS233AI-Data_Structures_and_Applications/blob/main/Hashing/Hashing.md)
