@@ -18,7 +18,7 @@ where $m$ is the size of the hash table.
 For example:
 Let the size of the hash table be `m = 7` and the `keys = {52, 44, 35, 24, 10}`
 
-<div align="center">
+
   
  $h(52)=52 \pmod 7 =3$
   
@@ -30,7 +30,7 @@ Let the size of the hash table be `m = 7` and the `keys = {52, 44, 35, 24, 10}`
   
   $h(10)=10 \pmod 7 =3$
   
-</div>
+
   
 The hash table will look like:
 
@@ -79,25 +79,28 @@ We can instead define $h(x)$ to be:
 $h(x)=(h(x)+i) \mod {10}$ <br>
   where i=0, 1 ... 9
   
-</div> 
+</div>
 
-`h(12)=2+0(mod 10)=2`
+$h(12)=2+0 \pmod {10}=2$
 
-`h(44)=4+0(mod 10)=4`
+$h(44)=4+0 \pmod {10}=4$
 
-`h(67)=7+0(mod 10)=7`
+$h(67)=7+0\pmod {10}=7$
 
-`h(22)=2+0(mod 10)=2` which causes a collision. So we increment `i`. Now, `h(22)=2+i(mod 10)=3`
+$h(22)=2+0\pmod {10}=2$ which causes a collision. So we increment `i`. Now, $h(22)=2+1\pmod {10}=3$
 
-`h(58)=8+0(mod 10)=8`
+$h(58)=8+0\pmod {10}=8$
 
-`h(64)=4+0(mod 10)=4` which causes a collision. So we increment `i`. Now `h(64)=4+1(mod 10)=5`
+$h(64)=4+0\pmod {10}=4$ which causes a collision. So we increment `i`. Now $h(64)=4+1\pmod {10}=5$
 
-`h(52)=2+0(mod 10)=2` which causes a collision. So we increment `i`. Now `h(52)=2+1(mod 10)=3` which again causes a collision. So we again increment `i`. Now `h(52)=2+2(mod 10)=4` which is a collision; increment `i`. Now `h(52)=2+3(mod 10)=5` which is a collision; increment `i`. Now `h(52)=2+4(mod 10)=6`.
+$h(52)=2+0\pmod {10}=2$ which causes a collision. So we increment `i`. Now $h(52)=2+1\pmod {10}=3$ which again causes a collision. So we again increment `i`. Now $h(52)=2+2\pmod {10}=4$ which is a collision; increment `i`. Now $h(52)=2+3\pmod {10}=5$ which is a collision; increment `i`. Now $h(52)=2+4\pmod {10}=6$.
 
-`h(89)=9+0(mod 10)=9`
+$h(89)=9+0\pmod {10}=9$
+
 
 The hash table will look like:
+
+<div align="center">
 
 |Index|Value|
 | :---:| :---:|
@@ -112,6 +115,8 @@ The hash table will look like:
 |8|58|
 |9|89|
 
+</div>
+
 The **problem** with linear probing is that it forms **clusters**.
 
 #### Quadratic Probing
@@ -124,7 +129,7 @@ $h(x)=x \pmod {10}$
 
 </div>  
 
-Let `keys={52, 24, 72, 80, 44, 65}`.
+Let `keys={52, 24, 72, 80, 44, 65, 64}`.
 
 We can instead define $h(x)$ to be:
 
@@ -133,3 +138,34 @@ We can instead define $h(x)$ to be:
 $h(x)=(h(x)+i^2) \mod {10}$ <br>
   where i=0, 1 ... 9
 </div> 
+
+$h(52)=2+0\pmod {10}=2$
+
+$h(24)=4+0\pmod {10}=4$
+
+$h(72)=2+0\pmod {10}=2$ causes collision, increment and square i. $h(72)=2+1^2\pmod {10}=3$.
+
+$h(80)=0+0\pmod {10}=0$
+
+$h(44)=4+0\pmod {10}=4$ causes a collision, increment and square i. $h(44)=4+1^2\pmod {10}=5$.
+
+$h(65)=5+0\pmod {10}=5$ causes a collision, increment and square i. $h(65)=5+1^2\pmod {10}=6$.
+
+$h(64)=4+0\pmod {10}=4$ causes a collision, increment and square i. $(64)=4+1^2\pmod {10}=5$ causes a collision, increment and square i. $h(64)=4+2^2\pmod {10}=8$.
+
+<div align="center">
+
+|Index|Value|
+| :---:| :---:|
+|0|80|
+|1| |
+|2|52|
+|3|72|
+|4|24|
+|5|44|
+|6|65|
+|7||
+|8|64|
+|9||
+
+</div>
