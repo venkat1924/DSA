@@ -60,7 +60,7 @@ Two methods of avoiding collision:
   - Double hashing
 - Separate Chaining
 
-### Open Addressing
+### Open Addressing (aka) Closed Hashing
 #### Linear Probing
 Let `m=10`, then:
 
@@ -169,3 +169,20 @@ $h(64)=4+0\pmod {10}=4$ causes a collision, increment and square i. $(64)=4+1^2\
 |9||
 
 </div>
+
+#### Double hashing
+
+<p align="center">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures_and_Applications/assets/128356330/30259cf7-9129-4a38-b476-bc15ea2a70c9" width=400>
+</p>
+
+That was a bad second hash function, a good one should never evaluate to zero and should allow you to probe every cell in the hash table.
+
+### Separate Chaining
+
+<p align="center">
+  <img src="https://github.com/venkat1924/IS233AI-Data_Structures_and_Applications/assets/128356330/bce29021-c741-4968-b40e-2442ee8d65ad" width=400>
+</p>
+
+
+
