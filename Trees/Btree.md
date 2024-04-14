@@ -42,9 +42,6 @@ This process ensures that the B-tree remains balanced, with all leaf nodes at th
 
 ## B+ tree
 
-Here's the rewritten explanation for B+ trees with improved readability:
-
-**B+ Trees: Enhanced Search and Sequential Access**
 
 B+ trees are an improvement over B-trees, designed for efficient searching and retrieval of large datasets stored on disk. Similar to B-trees, a B+ tree of order `m` can have a maximum of `m` children and `m-1` keys within a node.
 
