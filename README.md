@@ -27,6 +27,7 @@
 4. [Message Queue using Circular Queue](https://github.com/venkat1924/DSA/blob/main/LABS/3_Message_Queue.c)
 3. [Implementation of a priority queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/PriorityQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
 
+# [Dynamic Memory Allocation](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
 
 # Linked List
 1. [Ordered singly linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/orderedSinglyLinkedList.c)
