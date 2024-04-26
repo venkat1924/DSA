@@ -24,6 +24,7 @@
 1. [Implementation of a queue using an array and global variables](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueGlobalVariables.c) (courtesy of [Joel](https://github.com/playinpixel))
 2. [Implementation of a queue using an array and pointers](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueUsingPointers.c)
 3. [Implementation of a circular queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/circularQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
+4. [Message Queue using Circular Queue](https://github.com/venkat1924/DSA/blob/main/LABS/3_Message_Queue.c)
 3. [Implementation of a priority queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/PriorityQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
 
 
