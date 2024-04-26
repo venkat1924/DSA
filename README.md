@@ -11,14 +11,21 @@
 2. [Postfix expression evaluation](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/postfixEvaluation.c) (courtesy of [Joel](https://github.com/playinpixel))
 3. [Checking if parentheses in expression are balanced with a stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/parenthesesChecking.c)
 
+# Recursion
+1. [Factorial](https://github.com/venkat1924/DSA/blob/main/Recursion/factorial.c)
+2. [Binary Search](https://github.com/venkat1924/DSA/blob/main/Recursion/binarySearch.c)
+3. [GCD of two numbers](https://github.com/venkat1924/DSA/blob/main/Recursion/gcd.c)
+4. [Sum of integers in an array](https://github.com/venkat1924/DSA/blob/main/Recursion/arraySum.c)
+5. [Product of two numbers](https://github.com/venkat1924/DSA/blob/main/Recursion/product.c)
+6. [Towers of Hanoi](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Recursion/towersOfHanoi.c) (courtesy of [Joel](https://github.com/playinpixel))
+
+
 # [Queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/Queue_notes.md)
 1. [Implementation of a queue using an array and global variables](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueGlobalVariables.c) (courtesy of [Joel](https://github.com/playinpixel))
 2. [Implementation of a queue using an array and pointers](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueUsingPointers.c)
 3. [Implementation of a circular queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/circularQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
 3. [Implementation of a priority queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/PriorityQueue.c) (courtesy of [Joel](https://github.com/playinpixel))
 
-# Recursion
-[Towers of Hanoi](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Recursion/towersOfHanoi.c) (courtesy of [Joel](https://github.com/playinpixel))
 
 # Linked List
 1. [Ordered singly linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Linked_list/orderedSinglyLinkedList.c)
