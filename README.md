@@ -1,11 +1,15 @@
 # [Linear vs Non-Linear Data structures](https://github.com/venkat1924/DSA/blob/main/LinearVsNonLinear.md)
 # [Stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackNotes.md)
+## Implementation of Stacks in C and operations
 1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingArray.c)
 2) [Implementation of a stack using a struct](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingStruct.c)
 3) [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
-4) [Converting infix expression to postfix expression](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/infixToPostfix.c)
-5) [Postfix expression evaluation](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/postfixEvaluation.c) (courtesy of [Joel](https://github.com/playinpixel))
-6) [Checking if parentheses in expression are balanced with a stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/parenthesesChecking.c)
+## Applications of Stacks
+1. Converting infix expression to postfix expression
+    1. [Algorithm](https://github.com/venkat1924/DSA/blob/main/Stack/InfixToPostfixAlgorithm.md)
+    2. [Code](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/infixToPostfix.c)
+3) [Postfix expression evaluation](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/postfixEvaluation.c) (courtesy of [Joel](https://github.com/playinpixel))
+4) [Checking if parentheses in expression are balanced with a stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/parenthesesChecking.c)
 
 # [Queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/Queue_notes.md)
 1) [Implementation of a queue using an array and global variables](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/queueGlobalVariables.c) (courtesy of [Joel](https://github.com/playinpixel))
