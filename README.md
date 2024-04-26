@@ -1,3 +1,4 @@
+# [Linear vs Non-Linear Data structures](https://github.com/venkat1924/DSA/blob/main/LinearVsNonLinear.md)
 # [Stack](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackNotes.md)
 1) [Implementation of a stack using an array](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingArray.c)
 2) [Implementation of a stack using a struct](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingStruct.c)
