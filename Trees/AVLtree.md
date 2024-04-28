@@ -78,5 +78,5 @@ Two types are:
 - Double rotation
   - Left right rotation (LR)
   - Right left rotation (RL)
-
+> :warning:REMEMBER TO WRITE THE BF FOR EACH NODE EVERY TIME
 
