@@ -49,4 +49,7 @@
 3. [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Btree.md)
 4. [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Tries.md)
 
+# [Heaps](https://github.com/venkat1924/DSA/blob/main/Heaps/Heaps.md)
+1. [Priority Queue using a Heap, also contains heapify function](https://github.com/venkat1924/DSA/blob/main/LABS/7_Priority_Q_Heap.c)
+   
 # [Hashing](https://github.com/venkat1924/IS233AI-Data_Structures_and_Applications/blob/main/Hashing/Hashing.md)
