@@ -42,6 +42,7 @@
 ## Doubly Linked List
 ### Circular Doubly Linked List 
 1. [Multiplication of two polynomials using a Linked List](https://github.com/venkat1924/DSA/blob/main/LABS/4_Poly_mul.c) (courtesy of [Joel](https://github.com/playinpixel))
+2. [Sparse Matrix](https://github.com/venkat1924/DSA/blob/main/Linked_list/sparseMatrixwDLL.c) (courtesy of [Joel](https://github.com/playinpixel))
 
 # Trees
 1. [Binary Search Trees with all operations](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/binarySearchTrees.c)
