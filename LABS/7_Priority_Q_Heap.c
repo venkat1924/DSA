@@ -1,3 +1,5 @@
+//Constructs a Max-heap using the Bottom-up approach
+
 #include <stdio.h>
 #include <stdlib.h>
 
