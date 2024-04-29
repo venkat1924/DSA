@@ -48,10 +48,9 @@
 1. [Binary Search Trees with all operations](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/binarySearchTrees.c)
 2. [AVL Trees (incomplete)](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/AVLtree.md)
 3. Threaded Binary Trees: [notes](https://github.com/venkat1924/DSA/blob/main/Trees/ThreadedBinaryTree.md) [Code](https://github.com/venkat1924/DSA/blob/main/Trees/ThreadedBinaryTree.c)
-4. [B-trees and B+ trees](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Btree.md)
+4. [B-trees and B+ trees](https://github.com/venkat1924/DSA/blob/main/Trees/Btree.md)
 5. [Splay Trees](https://github.com/venkat1924/DSA/blob/main/Trees/SplayTree.md)
 6. [Tries](https://github.com/venkat1924/DSA/blob/main/Trees/Tries.md)
-7. [Tries](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Trees/Tries.md)
 
 # [Heaps](https://github.com/venkat1924/DSA/blob/main/Heaps/Heaps.md)
 1. [Priority Queue using a Heap, also contains heapify function](https://github.com/venkat1924/DSA/blob/main/LABS/7_Priority_Q_Heap.c)
