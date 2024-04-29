@@ -39,7 +39,7 @@
 2. [Implementation of a stack using a linked list](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Stack/stackUsingLinkedlist.c) (courtesy of [Joel](https://github.com/playinpixel))
 3. [Reversing a Singly Linked List](https://github.com/venkat1924/DSA/blob/main/Linked_list/reverseSLL.c)
 ### Circular Singly Linked List
-1. [Queue using SLL](https://github.com/venkat1924/DSA/blob/main/LABS/5_Queue_CLL.c)
+1. [Queue using CSLL](https://github.com/venkat1924/DSA/blob/main/LABS/5_Queue_CLL.c)
 ## Doubly Linked List
 1. [Sparse Matrix](https://github.com/venkat1924/DSA/blob/main/Linked_list/sparseMatrixwDLL.c) (courtesy of [Joel](https://github.com/playinpixel))
 ### Circular Doubly Linked List 
