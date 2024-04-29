@@ -18,6 +18,7 @@
 4. [Sum of integers in an array](https://github.com/venkat1924/DSA/blob/main/Recursion/arraySum.c)
 5. [Product of two numbers](https://github.com/venkat1924/DSA/blob/main/Recursion/product.c)
 6. Towers of Hanoi [Code](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Recursion/towersOfHanoi.c) [Recursion Tree for 3 disks](https://github.com/venkat1924/DSA/blob/main/Recursion/RecursionTreeHanoi.png)
+7. [Applications of Stack in Recursion](https://github.com/venkat1924/DSA/blob/main/Recursion/ApplicationOfStack.md)
 
 
 # [Queue](https://github.com/venkat1924/IS233AI-Data_Structures/blob/main/Queue/Queue_notes.md)
